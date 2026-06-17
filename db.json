@@ -1,0 +1,256 @@
+{
+  "reports": [
+    {
+      "id": "0oREZSxs72",
+      "image": "/uploads/oUubkili-1761932453767.png",
+      "description": "garbage",
+      "location": "ait",
+      "reporterName": "Anonymous",
+      "status": "completed",
+      "assignedTo": "ngo1",
+      "createdAt": "2025-10-31T17:40:53.785Z",
+      "assignedBy": "unknown",
+      "assignedAt": "2025-10-31T17:41:11.681Z",
+      "completedAt": "2025-10-31T18:34:54.653Z"
+    },
+    {
+      "id": "NxwKEQFL1S",
+      "image": "/uploads/xrerEZEr-1761934894221.png",
+      "description": "plastics",
+      "location": "dighi",
+      "reporterName": "Anonymous",
+      "status": "completed",
+      "assignedTo": "ngo2",
+      "createdAt": "2025-10-31T18:21:34.236Z",
+      "assignedBy": "unknown",
+      "assignedAt": "2025-10-31T18:34:49.036Z",
+      "completedAt": "2025-10-31T18:39:02.105Z"
+    },
+    {
+      "id": "Ab7xdytQ2y",
+      "image": "/uploads/g2ZEgV2a-1761971655332.png",
+      "description": "richa",
+      "location": "up",
+      "reporterName": "puja",
+      "status": "completed",
+      "assignedTo": "ngo1",
+      "createdAt": "2025-11-01T04:34:15.350Z",
+      "assignedBy": "unknown",
+      "assignedAt": "2025-11-01T04:34:44.565Z",
+      "completedAt": "2025-11-01T18:17:03.276Z"
+    },
+    {
+      "id": "1762020213674",
+      "reporterName": "aysha",
+      "description": "zxzx",
+      "location": "",
+      "lat": 18.607426349288584,
+      "lng": 73.87493583596846,
+      "image": "/uploads/1762020213666-oUubkili-1761932453767.png",
+      "assignedTo": "CleanNeighborhood",
+      "status": "completed",
+      "createdAt": "2025-11-01T18:03:33.674Z",
+      "assignedBy": "staff1",
+      "assignedAt": "2025-11-01T18:09:56.215Z",
+      "completedAt": "2025-11-01T18:10:07.564Z"
+    },
+    {
+      "id": "1762020763872",
+      "reporterName": "puja",
+      "description": "garbage",
+      "location": "",
+      "lat": 18.607444577701997,
+      "lng": 73.87488588313981,
+      "image": "/uploads/1762020763861-Screenshot_2025-11-01_234205.png",
+      "assignedTo": "CleanNeighborhood",
+      "status": "completed",
+      "createdAt": "2025-11-01T18:12:43.873Z",
+      "assignedBy": "staff1",
+      "assignedAt": "2025-11-01T18:16:59.163Z",
+      "completedAt": "2025-11-01T18:17:01.719Z"
+    },
+    {
+      "id": "1762056835923",
+      "reporterName": "Anonymous",
+      "description": "air pollution",
+      "location": "Lat: 18.60746, Lng: 73.87489",
+      "lat": 18.607463427517565,
+      "lng": 73.87488576344991,
+      "image": "/uploads/1762056835915-photo.jpg",
+      "assignedTo": "GreenHands",
+      "status": "completed",
+      "createdAt": "2025-11-02T04:13:55.923Z",
+      "assignedAt": "2025-11-14T10:15:54.384Z",
+      "completedAt": "2025-11-14T10:15:58.759Z"
+    },
+    {
+      "id": "1762063950936",
+      "reporterName": "richa",
+      "description": "richa ke room ka kachda",
+      "location": "",
+      "lat": 18.60743675957634,
+      "lng": 73.87500207697506,
+      "image": "/uploads/1762063950919-Screenshot_2025-11-01_234205.png",
+      "assignedTo": "GreenHands",
+      "status": "completed",
+      "createdAt": "2025-11-02T06:12:30.936Z",
+      "assignedAt": "2025-11-02T06:12:57.446Z",
+      "completedAt": "2025-11-13T17:45:51.980Z"
+    },
+    {
+      "id": "1763057381170",
+      "reporterName": "prince",
+      "description": "animal waste",
+      "location": "ait",
+      "lat": 18.607516926398887,
+      "lng": 73.8745085376132,
+      "image": "/uploads/1763057381155-Screenshot_2025-11-01_234205.png",
+      "assignedTo": "CleanNeighborhood",
+      "status": "completed",
+      "createdAt": "2025-11-13T18:09:41.170Z",
+      "assignedAt": "2025-11-14T10:17:07.272Z",
+      "completedAt": "2025-11-14T10:17:09.163Z"
+    },
+    {
+      "id": "1763115484047",
+      "reporterName": "prince",
+      "description": "dfghjk",
+      "location": "ait",
+      "lat": 18.6059705,
+      "lng": 73.8753335,
+      "image": "/uploads/1763115484034-bg-green.png",
+      "assignedTo": "CleanNeighborhood",
+      "status": "assigned",
+      "createdAt": "2025-11-14T10:18:04.047Z",
+      "assignedAt": "2025-11-14T11:03:56.167Z"
+    },
+    {
+      "id": "1769322061228",
+      "reporterName": "Puja",
+      "description": "waste",
+      "location": "ait",
+      "lat": 18.60650678795206,
+      "lng": 73.87472477267099,
+      "image": "/uploads/1769322061216-bg-green.png",
+      "assignedTo": "GreenHands",
+      "status": "completed",
+      "createdAt": "2026-01-25T06:21:01.228Z",
+      "assignedAt": "2026-01-25T06:21:35.853Z",
+      "completedAt": "2026-01-25T06:21:44.689Z"
+    },
+    {
+      "id": "1769328015460",
+      "reporterName": "puja",
+      "description": "water body waste",
+      "location": "juhu beach",
+      "lat": 18.60640219996347,
+      "lng": 73.87472329322684,
+      "image": "/uploads/1769328015446-bg-green.png",
+      "assignedTo": null,
+      "status": "unassigned",
+      "createdAt": "2026-01-25T08:00:15.460Z"
+    }
+  ],
+  "ngos": [
+    {
+      "id": "ngo1",
+      "name": "CleanNeighborhood",
+      "contact": "ngo1@clean.org"
+    },
+    {
+      "id": "ngo2",
+      "name": "GreenHands",
+      "contact": "ngo2@green.org"
+    }
+  ],
+  "staff": [
+    {
+      "id": "staff1",
+      "username": "staff",
+      "password": "password"
+    }
+  ],
+  "volunteers": [
+    {
+      "id": "1762230799072",
+      "name": "PUJA",
+      "email": "pujaairyhs@gmail.com",
+      "phone": "8218568324",
+      "area": "PUNE",
+      "availability": "Weekends",
+      "joinedAt": "2025-11-04T04:33:19.072Z"
+    },
+    {
+      "id": "1762231326223",
+      "name": "richa",
+      "email": "richayadav12@gmail.com",
+      "phone": "8957682115",
+      "area": "pune",
+      "availability": "Flexible",
+      "joinedAt": "2025-11-04T04:42:06.223Z"
+    },
+    {
+      "id": "1762968455834",
+      "name": "palak",
+      "email": "palakkumari@gmail.com",
+      "phone": "859175194",
+      "area": "pune",
+      "availability": "Flexible",
+      "joinedAt": "2025-11-12T17:27:35.834Z"
+    },
+    {
+      "id": "1763055771926",
+      "name": "prince maurya",
+      "email": "abc@gmail.com",
+      "phone": "52897431584",
+      "area": "pune",
+      "availability": "Flexible",
+      "joinedAt": "2025-11-13T17:42:51.926Z"
+    },
+    {
+      "id": "1763057718627",
+      "name": "nikhil ",
+      "email": "xyz@gmail.com",
+      "phone": "5284667256865",
+      "area": "pune",
+      "availability": "Weekends",
+      "joinedAt": "2025-11-13T18:15:18.627Z"
+    },
+    {
+      "id": "1763115401449",
+      "name": "prince",
+      "email": "try@cep",
+      "phone": "54654321",
+      "area": "pune",
+      "availability": "Flexible",
+      "joinedAt": "2025-11-14T10:16:41.449Z"
+    },
+    {
+      "id": "1769322139792",
+      "name": "sharad",
+      "email": "sharad@gmail.com",
+      "phone": "213654789",
+      "area": "pune",
+      "availability": "Flexible",
+      "joinedAt": "2026-01-25T06:22:19.792Z"
+    },
+    {
+      "id": "1769323677580",
+      "name": "puja",
+      "email": "xyz@gmail.com",
+      "phone": "123456789",
+      "area": "pune",
+      "availability": "Weekends",
+      "joinedAt": "2026-01-25T06:47:57.580Z"
+    },
+    {
+      "id": "1769328234160",
+      "name": "richa ",
+      "email": "xyz@gmail.com",
+      "phone": "1234567890",
+      "area": "pune",
+      "availability": "Weekdays",
+      "joinedAt": "2026-01-25T08:03:54.160Z"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>How It Works — CleanLink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ✅ Include Lucide Icons (free open-source SVG icons) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* 🌿 HERO SECTION */
+    .how-hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(0, 70, 40, 0.7), rgba(0, 70, 40, 0.7)),
+                  url("bg-green.jpg") center/cover no-repeat;
+      color: #fff;
+    }
+    .how-hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .how-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #e8ffe9;
+    }
+
+    /* 🌍 STEP SECTION */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 950px;
+      margin: 70px auto;
+      padding: 0 20px;
+    }
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      background: linear-gradient(135deg, #f4fff8, #e8f8ec);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+    .step:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+    }
+
+    /* ✅ ICON */
+    .step-icon {
+      flex-shrink: 0;
+      width: 70px;
+      height: 70px;
+      background: var(--green, #1f7a4c);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+    .step-icon svg {
+      width: 35px;
+      height: 35px;
+    }
+
+    .step-content h2 {
+      margin: 0 0 8px;
+      font-size: 1.4rem;
+      color: var(--dark, #0f3f27);
+    }
+    .step-content p {
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* 🌿 CTA SECTION */
+    .cta-section {
+      background: linear-gradient(135deg, #1f7a4c, #0f3f27);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 0;
+    }
+    .cta-section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .cta-section p {
+      color: #cde6cf;
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+    .cta-section .btn {
+      background: var(--accent, #7fc04c);
+      color: #000;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: transform 0.2s ease;
+    }
+    .cta-section .btn:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 700px) {
+      .step {
+        flex-direction: column;
+        text-align: center;
+      }
+      .step-icon {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="container">
+      <div class="logo">CLEAN<span class="accent">LINK</span></div>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="how-hero">
+    <h1>How WasteLink Works</h1>
+    <p>We bridge communities, NGOs, and staff — transforming waste problems into clean, green actions for a sustainable future.</p>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps">
+    <div class="step">
+      <div class="step-icon" data-lucide="camera"></div>
+      <div class="step-content">
+        <h2>1. Report Waste</h2>
+        <p>Citizens upload photos of waste spots using our <strong>Report Page</strong>. Each submission includes a location and brief description.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon" data-lucide="search"></div>
+      <div class="step-content">
+        <h2>2. Staff Review</h2>
+        <p>Our staff verifies the uploaded reports, ensuring location accuracy and categorizing the type of waste for effective action.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon" data-lucide="handshake"></div>
+      <div class="step-content">
+        <h2>3. NGO Assignment</h2>
+        <p>The verified report is assigned to the nearest registered NGO capable of handling the cleanup task efficiently.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon" data-lucide="leaf"></div>
+      <div class="step-content">
+        <h2>4. Cleanup in Action</h2>
+        <p>NGOs conduct cleanups, manage collected waste responsibly, and upload evidence such as images or progress updates.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon" data-lucide="award"></div>
+      <div class="step-content">
+        <h2>5. Track & Celebrate</h2>
+        <p>The completed tasks are displayed publicly, motivating communities to participate and celebrate their environmental impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <h2>Join the Change 🌎</h2>
+    <p>Your small action can spark a big difference. Help us create cleaner neighborhoods — one report at a time.</p>
+    <a href="report.html" class="btn">Report Waste Now</a>
+  </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our NGOs — CleanLink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Lucide icons for visuals -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* 🌿 Header Section */
+    .ngo-hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(0, 60, 30, 0.7), rgba(0, 60, 30, 0.7)),
+                  url("bg-green.jpg") center/cover no-repeat;
+      color: #fff;
+    }
+    .ngo-hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .ngo-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #e4ffe8;
+    }
+
+    /* 🌱 NGO Cards Section */
+    .ngo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .ngo-card {
+      background: linear-gradient(135deg, #f7fff9, #e7f7ec);
+      border-radius: 14px;
+      padding: 25px 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .ngo-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    }
+
+    .ngo-icon {
+      background: var(--green, #1f7a4c);
+      color: #fff;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .ngo-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .ngo-card h3 {
+      margin: 10px 0 5px;
+      color: var(--dark, #0f3f27);
+      font-size: 1.3rem;
+    }
+
+    .ngo-card p {
+      margin: 0;
+      color: #333;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    /* 🌎 CTA Footer Section */
+    .cta-section {
+      background: linear-gradient(135deg, #1f7a4c, #0f3f27);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 0;
+    }
+
+    .cta-section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta-section p {
+      color: #cde6cf;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .cta-section .btn {
+      background: var(--accent, #7fc04c);
+      color: #000;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: transform 0.2s ease;
+    }
+
+    .cta-section .btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="container">
+      <div class="logo">CLEAN<span class="accent">LINK</span></div>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="ngo-hero">
+    <h1>Our Partner NGOs</h1>
+    <p>Meet the organizations working with WasteLink to create a cleaner, greener world through community action.</p>
+  </section>
+
+  <!-- NGO Cards -->
+  <section class="ngo-grid" id="ngoList">
+    <!-- NGOs will load here dynamically -->
+  </section>
+
+  <!-- CTA Footer -->
+  <section class="cta-section">
+    <h2>Join as a Partner NGO 🌍</h2>
+    <p>Collaborate with WasteLink and help us expand sustainable waste management in your city.</p>
+    <a href="mailto:admin@wastelink.local" class="btn">Contact Us</a>
+  </section>
+
+  <!-- Script -->
+  <script>
+    // Load NGOs from backend
+    async function loadNGOs() {
+      try {
+        const res = await fetch('/api/ngos');
+        const ngos = await res.json();
+        const list = document.getElementById('ngoList');
+
+        if (ngos.length === 0) {
+          list.innerHTML = `<p style="text-align:center; font-size:1.1rem;">No NGOs currently registered.</p>`;
+          return;
+        }
+
+        list.innerHTML = ngos.map(n => `
+          <div class="ngo-card">
+            <div class="ngo-icon" data-lucide="heart-handshake"></div>
+            <h3>${n.name}</h3>
+            <p><strong>Contact:</strong> ${n.contact}</p>
+          </div>
+        `).join('');
+
+        lucide.createIcons();
+      } catch (err) {
+        console.error('Error loading NGOs:', err);
+      }
+    }
+
+    loadNGOs();
+  </script>
+</body>
+</html>

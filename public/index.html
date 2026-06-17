@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CleanLink — Waste Management Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f6fdf8;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background: #1f7a4c;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    header .accent {
+      color: #bdf5c1;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(31, 122, 76, 0.7), rgba(31, 122, 76, 0.7)), url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80") center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 25px;
+      color: #e6f9eb;
+    }
+    .hero .btn {
+      display: inline-block;
+      background: white;
+      color: #1f7a4c;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .hero .btn:hover {
+      background: #bdf5c1;
+      transform: translateY(-2px);
+    }
+
+    /* Info Section */
+    .info {
+      max-width: 1000px;
+      margin: 60px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card i {
+      color: #1f7a4c;
+      width: 40px;
+      height: 40px;
+    }
+    .card h3 {
+      margin-top: 15px;
+      color: #1f7a4c;
+      font-size: 1.2rem;
+    }
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* CTA Section */
+    .cta {
+      text-align: center;
+      padding: 70px 20px;
+      background: #1f7a4c;
+      color: white;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .cta p {
+      margin-bottom: 25px;
+      color: #e6f9eb;
+    }
+    .cta .btn {
+      background: white;
+      color: #1f7a4c;
+      border-radius: 30px;
+      padding: 12px 25px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .cta .btn:hover {
+      background: #bdf5c1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f3f27;
+      color: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">CLEAN<span class="accent">LINK</span></div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="report.html">Report Waste</a>
+      <a href="staff.html">Staff</a>
+      <a href="volunteer.html">Volunteer</a>
+
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Together for a Cleaner Tomorrow</h1>
+    <p>CleanLink connects communities with NGOs to take quick action on waste problems — from your neighborhood to the nation.</p>
+    <a href="report.html" class="btn">Report Waste</a>
+  </section>
+
+  <!-- Info Cards -->
+  <section class="info">
+    <div class="card">
+      <i data-lucide="map-pin"></i>
+      <h3>Community Reports</h3>
+      <p>Local residents upload images and locations of waste, helping identify areas that need attention.</p>
+    </div>
+    <div class="card">
+      <i data-lucide="hand-heart"></i>
+      <h3>NGO Collaboration</h3>
+      <p>Registered NGOs receive assignments directly from the platform to take swift cleanup action.</p>
+    </div>
+    <div class="card">
+      <i data-lucide="leaf"></i>
+      <h3>Sustainable Impact</h3>
+      <p>By bridging technology and awareness, CleanLink empowers people to create cleaner, greener communities.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Join the Movement</h2>
+    <p>Let’s make every corner of our cities waste-free and green again.</p>
+    <a href="report.html" class="btn">Start Reporting</a>
+  </section>
+
+  <footer>© 2025 CleanLink Community Waste Management Initiative</footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CleanLink Volunteer Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f6fdf8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1f7a4c;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    h2 { color: #1f7a4c; margin-bottom: 20px; text-align: center; }
+    label { font-weight: 600; display: block; margin-top: 15px; }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      font-size: 0.95rem;
+    }
+    button {
+      background: #1f7a4c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover { background: #17633c; }
+    .success { color: green; margin-top: 10px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>🌿 Join the CleanLink Volunteer Program</header>
+  <div class="container">
+    <h2>Become a Volunteer</h2>
+    <form id="volunteerForm">
+      <label>Full Name *</label>
+      <input type="text" id="name" required />
+
+      <label>Email *</label>
+      <input type="email" id="email" required />
+
+      <label>Phone Number *</label>
+      <input type="tel" id="phone" required />
+
+      <label>Area / City</label>
+      <input type="text" id="area" placeholder="e.g., Pune, Mumbai" />
+
+      <label>Availability</label>
+      <select id="availability">
+        <option value="Weekdays">Weekdays</option>
+        <option value="Weekends">Weekends</option>
+        <option value="Flexible">Flexible</option>
+      </select>
+
+      <button type="submit">Register as Volunteer</button>
+      <p id="msg" class="success"></p>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("volunteerForm");
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", async e => {
+      e.preventDefault();
+      const volunteer = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        area: document.getElementById("area").value,
+        availability: document.getElementById("availability").value
+      };
+
+      const res = await fetch("/api/volunteers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(volunteer)
+      });
+      const data = await res.json();
+
+      if (data.ok) {
+        msg.textContent = "🎉 Thank you for joining CleanLink! We'll contact you soon.";
+        form.reset();
+      } else {
+        msg.style.color = "red";
+        msg.textContent = "⚠️ Error submitting form. Try again.";
+      }
+    });
+  </script>
+</body>
+</html>
